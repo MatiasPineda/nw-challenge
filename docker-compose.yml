@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: neuralworks
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: postgres
+    volumes:
+      - neuralworks-postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+volumes:
+  neuralworks-postgres:
