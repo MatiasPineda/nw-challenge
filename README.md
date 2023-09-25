@@ -27,7 +27,7 @@ la región
 - [x] La solución debe estar escrita en Python
 - [x] Usar una base de datos SQL.
 - [x] Incluye contenedores en tu solución
-- [ ] Dibuja cómo configuraría la aplicación en GCP
+- [x] Dibuja cómo configuraría la aplicación en GCP
 
 
 ## Instalación
@@ -134,6 +134,9 @@ la región no deja claro una estructura, por lo que se popone la respuesta de `/
 
 
 ## Arquitectura en GCP
-- Gracias a que este proyecto está en contenedores, se puede utilizar Kubernetes Engine para desplegarlo.
+- Gracias a que este proyecto está en contenedores, se puede utilizar un servicio de gcp para desplegarlo.
 - Alternativamente, se puede utilizar Cloud SQL para la base de datos, ya que este servicio soporta Postgres.
 - Para la ingesta de datos, se puede utilizar Cloud Storage para almacenar los archivos CSV y Cloud Functions para ejecutar el proceso de ingesta.
+
+A continuación una descripción simple de la idea
+![Untitled-2023-09-25-1021](https://github.com/MatiasPineda/nw-challenge/assets/49490747/01db768e-5991-4ce6-a752-38c57e643929)
